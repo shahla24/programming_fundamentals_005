@@ -76,7 +76,7 @@ describe("Object.max", () => {
   });
 });
 
-describe("Object.clone", () => {
+describe.only("Object.clone", () => {
   test("returns a copy of the object", () => {
     const person1 = {
       name: "Sally",
@@ -90,7 +90,7 @@ describe("Object.clone", () => {
   });
 });
 
-describe("Object.get", () => {
+describe.only("Object.get", () => {
   test("returns the value for the given key", () => {
     expect(
       Object.get(
@@ -136,7 +136,7 @@ describe("Object.get", () => {
   });
 });
 
-describe("Object.has", () => {
+describe.only("Object.has", () => {
   test("returns true if the object has the give key", () => {
     const obj1 = { name: "Sally", location: "Leeds" };
     expect(Object.has(obj1, "name")).toBe(true);
@@ -161,7 +161,7 @@ describe("Object.has", () => {
   });
 });
 
-describe("Object.sum", () => {
+describe.only("Object.sum", () => {
   test("returns the sum of all the values when all values are numbers", () => {
     const obj = {
       a: 1,
@@ -234,7 +234,7 @@ describe("Object.invert", () => {
   });
 });
 
-describe("Object.addAll", () => {
+describe.only("Object.addAll", () => {
   test("Creates a new object out of all the objects in an array", () => {
     const objects = [{ a: 1 }, { b: 3 }, { c: "foo" }];
 
